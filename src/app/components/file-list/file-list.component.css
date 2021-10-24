@@ -1,0 +1,6 @@
+app-file-item:nth-of-type(odd) ::ng-deep div {
+  background-color: #e2e2e2;
+}
+app-file-item:nth-of-type(even) ::ng-deep div {
+  background-color: #c1c1c1;
+}
