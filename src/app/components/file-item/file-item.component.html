@@ -1,4 +1,11 @@
-<div>
-  <!-- Mostrar el icono correspondiente al tipo de archivo -->
-  <i [class]="fileInfo.tipo | extension"></i> {{ fileInfo.nombre }}
+<div class="file p-2">
+  <header>
+    <!-- Mostrar el icono correspondiente al tipo de archivo -->
+    <i [class]="fileInfo.tipo | extension"></i> {{ fileInfo.nombre }}
+  </header>
+  <div class="file__tools">
+    <span class="me-4">{{ fileInfo.peso }}</span>
+    <span class="me-2"><i class="far fa-edit"></i></span>
+    <span><i class="far fa-trash-alt"></i></span>
+  </div>
 </div>
